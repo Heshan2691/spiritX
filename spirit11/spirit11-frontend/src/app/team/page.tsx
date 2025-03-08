@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import Image from "next/image";
 import { Trophy, CheckSquare, Plus as PlusIcon } from "lucide-react";
 import Footer from "../components/ui/footer";
+import NavBar from "../components/ui/navbar";
 
 export default function CricketTeam() {
   const router = useRouter();
@@ -21,6 +22,7 @@ export default function CricketTeam() {
   return (
     <div className="flex flex-col">
       <div className="flex">
+        <NavBar />
         <div className="min-h-screen bg-gray-50 p-6 flex-1">
           <div className="flex justify-between items-center mb-6">
             <h1 className="text-2xl font-semibold text-gray-600">Cricket Team Members</h1>
@@ -92,13 +94,13 @@ export default function CricketTeam() {
 
           {/* Player List Table */}
           <div className="bg-white p-6 rounded-lg shadow-lg mt-6">
-            <h2 className="text-lg font-semibold mb-4 text-gray-600">Team Members</h2>
-            {/* Add Coupon Button */}
-        <div className="flex justify-end mb-6">
-          <button className="bg-blue-500 text-white px-4 py-2 rounded-md flex items-center gap-2 shadow-md hover:bg-blue-600">
-            <PlusIcon className="h-5 w-5" /> Add Member
-          </button>
-        </div>
+            <div className="flex justify-between items-center mb-6">
+              <h2 className="text-lg font-semibold text-gray-600">Team Members</h2>
+              <button className="bg-blue-500 text-white px-4 py-2 rounded-md flex items-center gap-2 shadow-md hover:bg-blue-600">
+                <PlusIcon className="h-5 w-5" /> Add Member
+              </button>
+            </div>
+            
 
             <table className="w-full border-collapse text-gray-600">
               <thead>
