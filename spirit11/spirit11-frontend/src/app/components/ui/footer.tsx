@@ -4,30 +4,30 @@ export default function Footer() {
         <div className="container mx-auto flex flex-col md:flex-row justify-between items-center px-6">
           
           <br></br>
-          <div className="w-full mt-6 grid grid-cols-2 md:grid-cols-3 gap-4 text-sm text-center md:text-left pl-20 text-gray-300">
-            <div className="space-y-2">
-              <p className="hover:text-white cursor-pointer">Criclytics™</p>
-              <p className="hover:text-white cursor-pointer">Match Schedule</p>
-              <p className="hover:text-white cursor-pointer">Fantasy Center</p>
-              <p className="hover:text-white cursor-pointer">All Series</p>
-              <p className="hover:text-white cursor-pointer">Cricket News</p>
-              <p className="hover:text-white cursor-pointer">Cricket Videos</p>
+          <div className="w-full mt-6 grid grid-cols-2 md:grid-cols-3 gap-4 text-sm text-center md:text-left pl-20">
+            <div>
+              <p>Criclytics™</p>
+              <p>Match Schedule</p>
+              <p>Fantasy Center</p>
+              <p>All Series</p>
+              <p>Cricket News</p>
+              <p>Cricket Videos</p>
             </div>
-            <div className="space-y-2">
-              <p className="hover:text-white cursor-pointer">Players</p>
-              <p className="hover:text-white cursor-pointer">Teams</p>
-              <p className="hover:text-white cursor-pointer">Stadiums</p>
-              <p className="hover:text-white cursor-pointer">Rankings</p>
-              <p className="hover:text-white cursor-pointer">Records</p>
-              <p className="hover:text-white cursor-pointer">Play Responsibly</p>
+            <div>
+              <p>Players</p>
+              <p>Teams</p>
+              <p>Stadiums</p>
+              <p>Rankings</p>
+              <p>Records</p>
+              <p>Play Responsibly</p>
             </div>
-            <div className="space-y-2">
-              <p className="hover:text-white cursor-pointer">Privacy Policy</p>
-              <p className="hover:text-white cursor-pointer">Terms of Use</p>
-              <p className="hover:text-white cursor-pointer">Cookie Policy</p>
-              <p className="hover:text-white cursor-pointer">Security</p>
-              <p className="hover:text-white cursor-pointer">Legality</p>
-              <p className="hover:text-white cursor-pointer">Contact Us</p>
+            <div>
+              <p>Privacy Policy</p>
+              <p>Terms of Use</p>
+              <p>Cookie Policy</p>
+              <p>Security</p>
+              <p>Legality</p>
+              <p>Contact Us</p>
             </div>
           </div>
         </div>

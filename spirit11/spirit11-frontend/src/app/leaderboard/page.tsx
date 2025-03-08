@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import Footer from "../components/ui/footer";
+import NavBar from "../components/ui/navbar";
 
 export default function Leaderboard() {
   const router = useRouter();
@@ -26,6 +27,7 @@ export default function Leaderboard() {
   return (
     <div className="flex">
     <div className="min-h-screen bg-gray-50 p-6 flex-1">
+      <NavBar />
       <div className="flex justify-between items-center mb-6">
         <h1 className="text-2xl font-semibold text-gray-600">🏆 Leaderboard</h1>
       </div>
