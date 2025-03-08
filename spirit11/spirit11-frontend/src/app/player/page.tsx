@@ -14,6 +14,7 @@ export default function ProfilePage() {
           {/* Header */}
           <div className="flex justify-between items-center mb-6">
             <h1 className="text-2xl font-semibold text-gray-600">Player’s Profile</h1>
+            
           </div>
 
           {/* Profile Card */}
