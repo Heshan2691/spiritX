@@ -1,3 +1,119 @@
+# Spirit11 Admin Panel
+
+## 🏏 Overview
+The **Spirit11 Admin Panel** is a web-based platform that allows administrators to manage players, track statistics, and configure the game logic for the fantasy cricket system. This panel provides an intuitive user interface for efficient team and tournament management.
+
+## 🚀 Tech Stack
+- **Frontend**: Next.js, Tailwind CSS
+- **Backend**: Node.js, Express.js
+- **Database**: MySQL
+- **Authentication**: JWT (JSON Web Token)
+- **API Client**: Axios
+- **Styling**: Tailwind CSS
+
+## 📂 Folder Structure
+```
+spirit11-admin/
+│-- frontend/              # Next.js-based Admin Panel UI
+│   ├── components/        # Reusable UI components
+│   ├── pages/             # Next.js pages (Dashboard, Players, Tournaments, etc.)
+│   ├── services/          # API service handlers
+│   ├── styles/            # Global styles
+│   ├── public/            # Static assets
+│   ├── next.config.js     # Next.js configuration file
+│   ├── tailwind.config.js # TailwindCSS configuration
+│   ├── package.json       # Dependencies and scripts
+│   └── tsconfig.json      # TypeScript configuration
+│
+│-- backend/               # Node.js API Server
+│   ├── controllers/       # Business logic handlers
+│   ├── routes/            # Express route definitions
+│   ├── models/            # Database models
+│   ├── middlewares/       # Authentication and validation
+│   ├── config/            # Environment configurations
+│   ├── db/                # MySQL database connection
+│   ├── package.json       # Backend dependencies and scripts
+│   ├── server.js          # Main server file
+│   └── .env               # Environment variables (API keys, DB credentials, etc.)
+```
+
+## 🎯 Features
+- **Admin Dashboard**: Overview of system stats.
+- **Player Management**: Add, update, and remove players.
+- **Team & Tournament Management**: Manage teams and tournament schedules.
+- **User Authentication**: Secure login with JWT.
+- **Responsive UI**: Optimized for desktop and mobile.
+
+## 🛠️ Setup & Installation
+### Prerequisites
+- Node.js (v18+)
+- MySQL Database
+- npm or yarn
+
+### 1️⃣ Clone the Repository
+```sh
+git clone https://github.com/yourusername/spirit11-admin.git
+cd spirit11-admin
+```
+
+### 2️⃣ Setup the Backend
+```sh
+cd backend
+npm install
+```
+
+Create a **.env** file in the `backend/` directory:
+```
+PORT=5000
+DB_HOST=localhost
+DB_USER=root
+DB_PASS=yourpassword
+DB_NAME=spirit11_db
+JWT_SECRET=your_secret_key
+```
+Run the backend:
+```sh
+npm start
+```
+
+### 3️⃣ Setup the Frontend
+```sh
+cd ../frontend
+npm install
+```
+Create a **.env.local** file in `frontend/`:
+```
+NEXT_PUBLIC_API_BASE_URL=http://localhost:5000/api
+```
+Run the frontend:
+```sh
+npm run dev
+```
+
+## 📌 API Endpoints (Backend)
+| Method | Endpoint         | Description |
+|--------|-----------------|-------------|
+| GET    | /api/players    | Get all players |
+| POST   | /api/players    | Add a new player |
+| PUT    | /api/players/:id | Update player details |
+| DELETE | /api/players/:id | Delete a player |
+
+## 🔥 Contribution
+Contributions are welcome! If you'd like to contribute:
+1. Fork the repository
+2. Create a new branch (`feature-xyz`)
+3. Commit your changes
+4. Push to your branch and submit a pull request
+
+## 📜 License
+This project is licensed under the MIT License.
+
+---
+🚀 **Happy Coding!** 🎯
+
+
+
+
 <<<<<<< HEAD
 # spiritX
 =======
