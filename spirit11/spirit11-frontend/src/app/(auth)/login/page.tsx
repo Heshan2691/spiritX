@@ -2,8 +2,10 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
+import { useRouter } from "next/navigation"; // Import useRouter
 
 const LoginPage = () => {
+  const router = useRouter(); // Initialize router
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [errors, setErrors] = useState<{ email?: string; password?: string }>({});
@@ -39,7 +41,8 @@ const LoginPage = () => {
       // Simulate API call
       setTimeout(() => {
         setIsSubmitting(false);
-        // Redirect or show success message
+        // Redirect to selection page after successful login
+        router.push("/selection");
       }, 1000);
     } else {
       setIsSubmitting(false);
