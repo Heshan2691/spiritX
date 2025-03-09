@@ -16,15 +16,9 @@ const Sidebar = () => {
           <li className={pathname === "/adminPanel/players" ? "font-bold text-yellow-400" : ""}>
             <Link href="/adminPanel/players">Players</Link>
           </li>
-          <li className={pathname === "/adminPanel/player-stats" ? "font-bold text-yellow-400" : ""}>
-            <Link href="/adminPanel/player-stats">Player Stats</Link>
-          </li>
           <li className={pathname === "/adminPanel/tournament-summary" ? "font-bold text-yellow-400" : ""}>
             <Link href="/adminPanel/tournament-summary">Tournament Summary</Link>
-          </li>
-          <li className={pathname === "/adminPanel/auth" ? "font-bold text-yellow-400" : ""}>
-            <Link href="/adminPanel/auth">Admin Authentication</Link>
-          </li>
+          </li> 
           <li className={pathname === "/adminPanel/logout" ? "font-bold text-yellow-400" : ""}>
             <Link href="/adminPanel/logout">Logout</Link>
           </li>
